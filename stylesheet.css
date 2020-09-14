@@ -1,14 +1,14 @@
-body{
+body {
     margin: 0;
     background-color:#E5E5E5;
 }
 
-header, main, nav, footer, ul{
+header, main, nav, footer, ul {
     display: flex;
     justify-content: center;  
 }
 
-h1{
+h1 {
     font-family: 'Frank Ruhl Libre';
     font-style: normal;
     font-weight: 900;
@@ -18,38 +18,51 @@ h1{
     color: #000000;  
 }
 
-p{
-    font-family: Fira Sans;
+h2 {
+    font-family: 'Frank Ruhl Libre';
+    font-style: normal;
+    margin: 0;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 41px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+
+}
+
+p {
+    font-family: 'Fira Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
+    margin: 0;
     color: rgba(0, 0, 0, 0.6);
 }
 
-.text-1{
+.text-1 {
     width: 314px;
     height: 101px;
     margin-left: 10%;
     margin-top: 10%;
 }
 
-.text-2{
+.text-2 {
     width: 260px;
     height: 103px;
     margin-left: 10%;
 }
 
-.white{
+.white {
     color: white;
 }
 
-.my-button{
+.my-button {
     width: 130px;
     height: 40px;
     margin-left: 10%;
-    margin-top: 5%;
-    font-family: Fira Sans;
+    margin-top: 3%;
+    font-family: 'Fira Sans';
     font-style: normal;
     font-weight: bold;
     font-size: 10px;
@@ -57,11 +70,12 @@ p{
     background: #FFFFFF;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
     border-radius: 100px;
-    border-style: none;    
+    border-style: none; 
+    text-transform: uppercase;   
 }
 
 
-.nav-container li{
+.nav-container li {
     font-family: 'Fira Sans';
     font-style: normal;
     font-weight: 600;
@@ -87,13 +101,14 @@ p{
 .item-1{
     grid-column-start: auto;
     grid-row-end: span 2;
-    background-color: #C7DDEA;    
+    background-color: #C7DDEA; 
+    position: relative; 
 }
 
 .family{
     position: absolute;
-    left: 417px;
-    top: 270px;
+    right: 8px; 
+    bottom: -4px;  
 }
 
 .item-2{
@@ -101,15 +116,28 @@ p{
     grid-column-end: span 2;
     grid-row: 1 / span 1;
     background: #F17949;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
 }
+
+/* .item-2 h2 p {
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+} */
 
 .item-3{ 
     grid-column-start: 2;
     grid-column-end: span 2;
     grid-row: 2 / span 2;
     background:#FAB131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-
 
 .main-container{
     width: 1000px;
@@ -136,9 +164,9 @@ p{
     align-items: center;
     position:absolute;
     top: 450px;
-    z-index: 3;
-    
+    z-index: 3;   
 }
+
 .orange-div{   
     background-color: orange;
 }
@@ -146,7 +174,7 @@ p{
 .box-div{
     display: grid;
     grid-template-columns: repeat(3,333px);
-    grid-template-rows: repeat(3,333px);
+    grid-template-rows: repeat(2,300px);
 }
 
 .footer-container{
