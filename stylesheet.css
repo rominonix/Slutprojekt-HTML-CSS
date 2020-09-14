@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    background-color:#E5E5E5;
+}
+
+header, main, nav, footer, ul{
+    display: flex;
+    justify-content: center;  
+}
+
+h1{
+    font-family: 'Frank Ruhl Libre';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #000000;  
+}
+
+p{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.text-1{
+    width: 314px;
+    height: 101px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.text-2{
+    width: 260px;
+    height: 103px;
+    margin-left: 10%;
+}
+
+.white{
+    color: white;
+}
+
+.my-button{
+    width: 130px;
+    height: 40px;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    border-style: none;    
+}
+
+
+.nav-container li{
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    list-style-type: none;
+    padding: 10px 70px 10px 70px;    
+}
+
+.opacity{
+    opacity: 0.4;
+}
+
+.header-container{
+    width: 1000px;
+    height: 550px;
+    display: grid; 
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr); 
+}
+
+.item-1{
+    grid-column-start: auto;
+    grid-row-end: span 2;
+    background-color: #C7DDEA;    
+}
+
+.family{
+    position: absolute;
+    left: 417px;
+    top: 270px;
+}
+
+.item-2{
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row: 1 / span 1;
+    background: #F17949;
+}
+
+.item-3{ 
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row: 2 / span 2;
+    background:#FAB131;
+}
+
+
+.main-container{
+    width: 1000px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(3, 600px);
+    grid-template-columns: repeat(1,1fr);
+    position: relative;
+}
+
+.grey-div{
+    background-color: #A9A19E;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.float-div{
+    background-color:red;
+    width: 1000px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    position:absolute;
+    top: 450px;
+    z-index: 3;
+    
+}
+.orange-div{   
+    background-color: orange;
+}
+
+.box-div{
+    display: grid;
+    grid-template-columns: repeat(3,333px);
+    grid-template-rows: repeat(3,333px);
+}
+
+.footer-container{
+    width: 1000px;
+    height: 400px;
+    background-color:#777574;
+}
+
+.swipe-up{
+    height: 70px;
+    background-color: #A9A19E;   
+}
