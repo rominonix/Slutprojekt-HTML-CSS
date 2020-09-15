@@ -1,3 +1,4 @@
+/* --- html tag styles --- */
 body {
     margin: 0;
     background-color:#E5E5E5;
@@ -15,7 +16,6 @@ h1 {
     font-size: 45px;
     line-height: 100%;
     letter-spacing: -0.02em;
-    color: #000000;  
 }
 
 h2 {
@@ -27,7 +27,24 @@ h2 {
     line-height: 41px;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+}
 
+h3{
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+h4 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 p {
@@ -44,12 +61,13 @@ p {
     width: 314px;
     height: 101px;
     margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 12%;
 }
 
 .text-2 {
     width: 260px;
     height: 103px;
+    margin-top: 3%;
     margin-left: 10%;
 }
 
@@ -73,7 +91,7 @@ p {
     border-style: none; 
     text-transform: uppercase;   
 }
-
+/* --- navigation style --- */
 
 .nav-container li {
     font-family: 'Fira Sans';
@@ -86,11 +104,12 @@ p {
     padding: 10px 70px 10px 70px;    
 }
 
-.opacity{
+.opacity {
     opacity: 0.4;
 }
 
-.header-container{
+
+.header-container {
     width: 1000px;
     height: 550px;
     display: grid; 
@@ -98,48 +117,43 @@ p {
     grid-template-columns: repeat(2,1fr); 
 }
 
-.item-1{
+.family {
+    position: absolute;
+    right: 8px; 
+    bottom: -4px;  
+}
+
+.item-1 {
     grid-column-start: auto;
     grid-row-end: span 2;
     background-color: #C7DDEA; 
     position: relative; 
 }
 
-.family{
-    position: absolute;
-    right: 8px; 
-    bottom: -4px;  
-}
-
-.item-2{
+.item-2 {
     grid-column-start: 2;
     grid-column-end: span 2;
     grid-row: 1 / span 1;
     background: #F17949;
+}
+
+.item-2 , .item-3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;  
+    text-align: center; 
 }
 
-/* .item-2 h2 p {
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-} */
-
-.item-3{ 
+.item-3 { 
     grid-column-start: 2;
     grid-column-end: span 2;
     grid-row: 2 / span 2;
     background:#FAB131;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
-.main-container{
+/* --- main style general--- */
+
+.main-container {
     width: 1000px;
     display: grid;
     justify-content: center;
@@ -148,42 +162,148 @@ p {
     position: relative;
 }
 
-.grey-div{
+/* --- main first section --- */
+
+.gray-div {
     background-color: #A9A19E;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
 
-.float-div{
-    background-color:red;
-    width: 1000px;
+.paragraph {
+    margin: 20% 30% 0 10%;
+}
+
+/* --- main second section card styles --- */
+
+.card-div{
+    width: 100%;
     height: 300px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
-    align-items: center;
     position:absolute;
-    top: 450px;
-    z-index: 3;   
+    top: 450px;   
 }
 
-.orange-div{   
+.card-blue{
+    background-color: #C7DDEA;
+}
+
+.card-yellow{
+    background-color:#FAB131;
+
+}
+
+.card-orange{
+    background-color:#F17949;
+}
+
+.fondo { 
+    width: 230px;
+    height: 150px;
+    display: grid;
+    justify-content: center;
+    border-radius: 5px;
+    position: absolute;
+    top: -30px;
+    padding-top: 10px;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    justify-items: center; 
+}
+
+.card-body {
+    background-color:white;
+    width: 214px;
+    position: absolute;
+    display: grid;
+    top: 130px;
+    justify-items: center;
+   
+}
+
+.card-text {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* --- main third section styles --- */
+
+.orange-div {   
     background-color: orange;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20%;
 }
 
-.box-div{
+/* --- main fourth section styles --- */
+
+.box-div {
     display: grid;
     grid-template-columns: repeat(3,333px);
     grid-template-rows: repeat(2,300px);
 }
 
-.footer-container{
+.box-blue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #C7DDEA;
+}
+
+.box-white{
+    background-color: white;
+}
+
+.box-orange{
+    background-color: #F17949;
+}
+
+.box {
+    display: grid;
+    text-align: center;
+    padding: 10%; 
+}
+
+.number {
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 100%;
+    display: flex;
+    align-self: start;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.4);
+    margin: 0%;
+}
+
+/* --- footer section styles --- */
+
+.footer-container {
     width: 1000px;
     height: 400px;
     background-color:#777574;
 }
 
-.swipe-up{
+.swipe-up {
     height: 70px;
     background-color: #A9A19E;   
 }
