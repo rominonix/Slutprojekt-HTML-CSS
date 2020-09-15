@@ -29,7 +29,7 @@ h2 {
     color: #FFFFFF;
 }
 
-h3{
+h3 {
     font-family: Frank Ruhl Libre;
     font-style: normal;
     font-weight: bold;
@@ -41,6 +41,7 @@ h3{
 h4 {
     font-family: Fira Sans;
     font-style: normal;
+    margin: 0;
     font-weight: 500;
     font-size: 17px;
     line-height: 20px;
@@ -55,6 +56,54 @@ p {
     line-height: 24px;
     margin: 0;
     color: rgba(0, 0, 0, 0.6);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- header styles and element --- */
+
+.header-container {
+    width: 1000px;
+    height: 550px;
+    display: grid; 
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr); 
+}
+
+.family {
+    position: absolute;
+    right: 8px; 
+    bottom: -4px;  
+}
+
+.item-1 {
+    grid-column-start: auto;
+    grid-row-end: span 2;
+    background-color: #C7DDEA; 
+    position: relative; 
+}
+
+.item-2 {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row: 1 / span 1;
+    background: #F17949;
+}
+
+.item-2 , .item-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.item-3 { 
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row: 2 / span 2;
+    background:#FAB131;
 }
 
 .text-1 {
@@ -109,48 +158,6 @@ p {
 }
 
 
-.header-container {
-    width: 1000px;
-    height: 550px;
-    display: grid; 
-    grid-template-rows: repeat(2,1fr);
-    grid-template-columns: repeat(2,1fr); 
-}
-
-.family {
-    position: absolute;
-    right: 8px; 
-    bottom: -4px;  
-}
-
-.item-1 {
-    grid-column-start: auto;
-    grid-row-end: span 2;
-    background-color: #C7DDEA; 
-    position: relative; 
-}
-
-.item-2 {
-    grid-column-start: 2;
-    grid-column-end: span 2;
-    grid-row: 1 / span 1;
-    background: #F17949;
-}
-
-.item-2 , .item-3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; 
-}
-
-.item-3 { 
-    grid-column-start: 2;
-    grid-column-end: span 2;
-    grid-row: 2 / span 2;
-    background:#FAB131;
-}
-
 /* --- main style general--- */
 
 .main-container {
@@ -168,6 +175,15 @@ p {
     background-color: #A9A19E;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.main-titel{
+    width: 314px;
+    height: 101px;
+    margin-left: 10%;
+    margin-top: 12%;
+
 }
 
 .paragraph {
@@ -304,6 +320,9 @@ p {
 }
 
 .swipe-up {
-    height: 70px;
-    background-color: #A9A19E;   
+    background-color: #A9A19E;
+    display: grid;
+    justify-content: center; 
+    justify-items: center; 
+    padding-bottom: 1%;
 }
