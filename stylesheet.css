@@ -1,4 +1,61 @@
 /* --- html tag styles --- */
+
+/* @media only screen and (max-width: 79vh) {
+   
+    nav ul {
+        display: none;
+    }
+
+   
+    header .header-container{
+        display: block;
+        height: auto;
+    }
+
+    .header-container{
+        width: 100%;
+    }
+
+    .item-1{
+        width: 100%;
+    }
+    .header-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70% 50% 50%;
+    }
+
+
+
+
+    .gray-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+    }
+    .box-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+    }
+
+    .box{
+        display: none;
+    }
+
+    .footer-container {
+        height: 30vh;
+        background-color:#777574;
+    }
+
+    .footer-container > .swipe-up{
+        display: none;
+    }
+
+
+  } */
+  
 body {
     margin: 0;
     background-color:#E5E5E5;
@@ -124,6 +181,26 @@ a {
     color: white;
 }
 
+/* button {
+    
+    width: 18vh;
+    height: 6vh;
+    border-radius: 100px;
+    border-style: none; 
+    text-transform: uppercase;
+    margin-top: 2%;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    border-style: none; 
+    text-transform: uppercase;   
+
+} */
 .my-button {
     width: 130px;
     height: 40px;
