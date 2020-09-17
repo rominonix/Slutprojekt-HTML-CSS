@@ -63,7 +63,8 @@ body {
 
 header, main, nav, footer, ul {
     display: flex;
-    justify-content: center;  
+    justify-content: center; 
+     
 }
 
 h1 {
@@ -118,7 +119,10 @@ p {
 a {
     text-decoration: none;
 }
-
+a:visited {
+    color: #000;
+    opacity: 0.4;
+}
 /* --- header styles and element --- */
 
 .header-container {

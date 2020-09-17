@@ -1,7 +1,5 @@
 /* --- html tag styles contact sida --- */
 
-
-  
 body {
     margin: 0;
     background-color:#E5E5E5;
@@ -19,185 +17,195 @@ h1 {
     font-size: 45px;
     line-height: 45px;
     letter-spacing: -0.02em;
+    margin: 0%;
 }
-
 
 p {
     font-family: 'Fira Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 14px;
     margin: 0;
-    color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0.6;   
 }
 
 a {
     text-decoration: none;
-    /* color: #000;
-    opacity: 0.4; */
 }
-a :visited{
+
+a:visited {
     color: #000;
     opacity: 0.4;
 }
 
+/* --- span --- */
+
 .white {
     color: white;
-}
-
-.my-button {
-    width: 130px;
-    height: 40px;
-    margin-left: 10%;
-    margin-top: 3%;
-    font-family: 'Fira Sans';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 12px;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 100px;
-    border-style: none; 
-    text-transform: uppercase;   
-}
-/* --- navigation style --- */
-
-.nav-container li {
-    font-family: 'Fira Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 100%;
-    letter-spacing: -0.02em;
-    list-style-type: none;
-    padding: 10px 70px 10px 70px;    
 }
 
 .opacity {
     opacity: 0.4;
 }
 
-
-
-
-.main-titel{
-    width: 314px;
-    height: 101px;
-    margin-left: 10%;
-    margin-top: 12%;
-
-}
-
-/* ---kontakt sida style--- */
+/* --- header styles --- */
 
 .header-contact {
     width: 131vh;
     padding-top: 5%;
-    /* height: 400px; */
     background-color: #C7DDEA;
     display: grid;
     grid-template-columns: 70% 30%;
-    /* justify-content: center;
-    align-content: center; */
 }
 
-.contact-img{
-    align-self: flex-end;
-    justify-content: flex-end;
-    height: 300px;
-}
-.text-contact{
+.text-contact {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.text-contact h1{
-    margin-right: 10%;
-   
+.text-contact h1 {
+    margin-right: 8%;   
 }
+
+.contact-img {
+    height: 300px;
+}
+
+/* --- navigation --- */
+
+nav > ul { 
+    width: 131vh;
+}
+
+ul {
+    background-color: white;
+    padding-left: 0%;
+    margin: 0%;;
+    height: 60px;
+    align-items: center; 
+}
+
+ul > li {
+    font-family: 'Fira Sans';
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: -0.02em;
+    list-style-type: none;
+    padding: 10px 80px 10px 80px;   
+}
+
+/* --- main contact styles--- */
+
 .main-contact {
     width: 131vh;
     background-color: #A9A19E;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 1fr;
-
+    grid-template-rows: repeat(2,1fr);
+    padding-top: 10%;
 }
 
-.my-form{
-    padding-top: 20%;
-    display: grid;
-    grid-template-rows: 15% 70% 15%;
+.main-title {
+    width: 300px;
+    height: 150px;
+    margin-left: 10%;
+}
+
+.main-form {
+    padding-bottom: 40px;
 }
 
 .mail-area {
-    width: 40vh;
-    height: 5vh;
+    width: 330px;
+    height: 30px;
     border-radius: 2px;
-    border-style: none;
-    margin-bottom: 8%;
-    
-}
-.text-area {
-    width: 40vh;
-    height: 40vh;
-    border-radius: 2px;
-    border-style: none;
+    border-style: none; 
+    margin-bottom: 5%; 
 }
 
-.send-button{
-    
-    margin-top: 2%;
-    
+.message-area {
+    width: 330px;
+    height: 170px;
+    border-radius: 2px;
+    border-style: none;
+    margin-bottom: 5%;
+}
+
+::placeholder {
     font-family: 'Fira Sans';
-    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 5%;
+    color:black;    
+}
+
+.my-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 33%;
+}
+
+.send-button {    
+    font-family: 'Fira Sans';
     font-weight: bold;
     font-size: 10px;
     line-height: 12px;
     background: #FFFFFF;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 100px;
-    border-style: none; 
+    border-radius: 100px; 
     text-transform: uppercase;  
-    width: 20vh;
-    height: 5vh;
-    border-radius: 20px;
-    border-style: none;
-    
+    width: 130px;
+    height: 40px;
+    border-style: none; 
 }
 
-.footer-contact{
-    width: 131vh;
-    height: 121vh;
-    background-color:#777574;
-    display: grid;
-    grid-template-rows: repeat(2,1fr);   
-}
-
-.main-map{
+.contact-map {
     background-image: url("img/karta.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    
+    grid-column: 1 / span 2;
+    position: relative;
 }
 
-.checkpoint{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-come{
-    display: block;
-    margin-top: 10%;
-    margin-left: 12%;
-    padding-left: 7%;
+.map-box {
+    padding: 1%;
+    margin-left: 9%;
+    margin-top: 5%;
     background-color:#FAB131;
-    width: 300px;
-    height: 230px;
+    width: 320px;
+    height: 210px;
 }
+
+.map-title {
+    color: white;
+    text-align: center;
+    padding-top: 4%;
+}
+
+.map-text{
+    opacity: 1;
+    padding-left: 8%;
+    color: white;  
+}
+
+.checkpoint {
+    position: absolute;
+    top: 200px;
+    right: 450px;
+}
+
+/* --- footer style contact --- */
+
+.footer-contact {
+    width: 131vh;
+    height: 40vh;
+    background-color:#777574;  
+}
+
+
+
+
+
