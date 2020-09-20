@@ -1,4 +1,5 @@
-/* --- html tag styles --- */
+
+/* --- mobilversion mediaquery --- */
 
  @media only screen and (max-width: 600px) {
 
@@ -14,33 +15,70 @@
         padding-top: 5%;
     }
 
-    main .gray-div {
-        /* width: 100%; */
-        background-color: #A9A19E;
-        display: grid;
-        grid-template-columns: 1fr;
-        padding-left: 2%;
-        padding-top: 5%;
+    nav > ul{
+        display: none;
+    }
 
+    main .main-container {
+        width: 600px;
+        grid-template-rows: 1630px 650px 850px;
+        justify-content: center;
+    }
+
+    main .main-gray {
+        width: 100%;
+        display: block;
+        padding-top: 5%;
+    }
+
+    main .main-gray-left {
+        display: grid;
+        grid-template-rows: 200px auto;
     }
 
     main .paragraph {
-        margin: 4%;
+        margin-left: 10%;
     }
 
     .my-button-main {
         display: none;  
     }
-    
-    nav > ul{
-        display: none;
+
+    main .main-card{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        top: 500px; 
     }
 
+    main .card {
+        margin-top: 15%;   
+    }
 
+    main .main-orange-content > h1 {
+        margin-bottom: 5%;
+    }
 
+    main .main-orange-content {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 20%;
+    }
+
+    main .main-box {
+        display: block;
+    }
+
+    footer .footer-container {
+        height: 200px;
+    }
+
+    footer .swipe-up {
+        display: none;
+    }   
  }
    
-  
+/* --- html tag styles --- */
+
 body {
     margin: 0;
     background-color:#E5E5E5;
@@ -48,12 +86,16 @@ body {
 
 header, main, nav, footer, ul {
     display: flex;
-    justify-content: center;   
+    justify-content: center;  
+    justify-items: center; 
+}
+
+ul {
+    padding-left: 0%;
 }
 
 h1 {
     font-family: 'Frank Ruhl Libre';
-    font-style: normal;
     font-weight: 900;
     font-size: 45px;
     line-height: 100%;
@@ -63,7 +105,6 @@ h1 {
 
 h2 {
     font-family: 'Frank Ruhl Libre';
-    font-style: normal;
     margin: 0;
     font-weight: 900;
     font-size: 32px;
@@ -73,8 +114,7 @@ h2 {
 }
 
 h3 {
-    font-family: Frank Ruhl Libre;
-    font-style: normal;
+    font-family: 'Frank Ruhl Libre';
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
@@ -82,7 +122,7 @@ h3 {
 }
 
 h4 {
-    font-family: Fira Sans;
+    font-family: 'Fira Sans';
     font-style: normal;
     margin: 0;
     font-weight: 500;
@@ -116,7 +156,6 @@ a:visited {
     width: 131vh;
     height: 70vh;
     display: grid; 
-    /* grid-template-rows: repeat(2,1fr); */
     grid-template-columns: repeat(2,1fr); 
 }
 
@@ -188,7 +227,7 @@ a:visited {
 
 /* --- navigation style --- */
 
-.nav-container li {
+nav ul > li {
     font-family: 'Fira Sans';
     font-style: normal;
     font-weight: 600;
@@ -203,41 +242,44 @@ a:visited {
 
 .main-container {
     width: 131vh;
-    /* display: grid;
-    justify-content: center;
-    grid-template-rows: repeat(3, 600px);
-    grid-template-columns: repeat(1,1fr); */
+    display: grid;
+    grid-template-rows: 550px 550px 600px;
     position: relative;
 }
 
 /* --- main first section --- */
 
-.gray-div {
+.main-gray{
     background-color: #A9A19E;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+}
+
+.main-gray-left {
+    display: grid;
+    grid-template-rows: 250px auto;
 }
 
 .main-title{
     width: 314px;
     height: 101px;
     margin-left: 10%;
-    margin-top: 12%;
-
+    margin-top: 10%;    
 }
 
 .paragraph {
-    margin: 20% 30% 0 10%;
+    width: 280px;
+    height: 230px ;
+    margin-left: 20%;
+    margin-top: 10%;
 }
 
 .my-button-main {
     width: 130px;
     height: 40px;
     margin-left: 10%;
-    margin-top: 3%;
     font-family: 'Fira Sans';
-    font-style: normal;
     font-weight: bold;
     font-size: 10px;
     background: #FFFFFF;
@@ -246,17 +288,19 @@ a:visited {
     border-style: none; 
     text-transform: uppercase;   
 }
+
 /* --- main second section card styles --- */
 
-.card-div{
+.main-card{
     width: 100%;
-    height: 300px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
+    justify-content: center;
+    align-items: center;
     position:absolute;
-    top: 450px;
-       
+    top: 400px;
+    background-color: transparent;       
 }
 
 .card-blue{
@@ -272,7 +316,7 @@ a:visited {
     background-color:#F17949;
 }
 
-.fondo { 
+.card-top { 
     width: 230px;
     height: 150px;
     display: grid;
@@ -301,13 +345,11 @@ a:visited {
     position: absolute;
     display: grid;
     top: 130px;
-    justify-items: center;
-   
+    justify-items: center;  
 }
 
 .card-text {
-    font-family: Fira Sans;
-    font-style: normal;
+    font-family: 'Fira Sans';
     font-weight: bold;
     font-size: 11px;
     line-height: 18px;
@@ -317,24 +359,35 @@ a:visited {
 
 /* --- main third section styles --- */
 
-.orange-div {   
+.main-orange {   
     background-color: orange;
-    display: grid;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    padding: 20%;
+}
+
+.main-orange-content {
+    padding-top: 20%;
+    padding-right: 15%;
+    padding-left: 15%;
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;   
+}
+
+.main-orange-content > h1 {
+    padding-bottom: 3%;
 }
 
 /* --- main fourth section styles --- */
 
-.box-div {
+.main-box {
     display: grid;
-    grid-template-columns: repeat(3,333px);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,300px);
 }
 
-.box-blue{
+.box-blue {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -342,11 +395,11 @@ a:visited {
     background-color: #C7DDEA;
 }
 
-.box-white{
+.box-white {
     background-color: white;
 }
 
-.box-orange{
+.box-orange {
     background-color: #F17949;
 }
 
@@ -357,8 +410,7 @@ a:visited {
 }
 
 .number {
-    font-family: Frank Ruhl Libre;
-    font-style: normal;
+    font-family: 'Frank Ruhl Libre';
     font-weight: 900;
     font-size: 35px;
     line-height: 100%;
@@ -372,15 +424,19 @@ a:visited {
 /* --- footer section styles --- */
 
 .footer-container {
-    width: 1000px;
+    width: 131vh;
     height: 400px;
+    display: grid;
+    justify-items: center; 
     background-color:#777574;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 320px;
 }
 
 .swipe-up {
+    width: 100%;
     background-color: #A9A19E;
     display: grid;
     justify-content: center; 
     justify-items: center; 
-    padding-bottom: 1%;
 }

@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700&display=swap" rel="stylesheet">
-   
     <link rel="stylesheet" href="stylesheet.css">
-   
-    
     <title>Slutprojekt HTML / CSS 2020</title>
 </head>
 <body>
+
     <header>
         <section class="header-container">
             <section class="item-right">
@@ -41,7 +39,7 @@
         </section>  
     </header>
 
-    <nav class="nav-container">
+    <nav>
         <ul>
             <li>Home</li>
             <li><span class="opacity">Our offer</span></li>
@@ -49,59 +47,64 @@
             <li><a href="contact.html"><span class="opacity">Contact</span></a></li>
         </ul>
     </nav> 
+    
     <main>
         <section class="main-container">
-            <div class="gray-div">
-                <div class="main-title">
-                    <h1><span class="white">Your personal financial safety net online.</span></h1>
+            <section class="main-gray">
+                <div class="main-gray-left">
+                    <div class="main-title"><h1><span class="white">Your personal financial safety net online.</span></h1></div>
+                    <button class="my-button-main">Join now</button>
                 </div>
                 <div class="paragraph"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor ligula vel felis cursus egestas. 
                     Etiam consectetur finibus facilisis. Proin accumsan auctor purus, quis finibus tellus accumsan id. Quisque tellus elit, 
                     ullamcorper sed mollis ac, interdum vel enim. Pellentesque congue felis eget lorem tempor blandit. Mauris hendrerit 
-                    ullamcorper ex quis congue donec vel finibus libero.</p></div>
-                    <div><button class="my-button-main">Join now</button></div>
-            </div>
-           
-            <div class="card-div">
+                    ullamcorper ex quis congue donec vel finibus libero.</p>
+                </div>    
+            </section>
+
+            <section class="main-card">
                 <div class="card">
-                    <div class="card-blue fondo"><img class="card-img-top" src="img/child.png" alt="Child illustration" width="90" height="175"></div>
-                    <div class="card-body">
-                        <h3>Children</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor ligula vel felis cursus egestas. 
-                            Etiam consectetur finibus facilisis. Proin accumsan auctor purus, quis finibus tellus accumsan id.</p>
-                    </div>
+                    <div class="card-blue card-top"><img class="card-img-top" src="img/child.png" alt="Child illustration" width="90" height="175"></div>
+                        <div class="card-body">
+                            <h3>Children</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor ligula vel felis cursus egestas. 
+                                Etiam consectetur finibus facilisis. Proin accumsan auctor purus, quis finibus tellus accumsan id.</p>
+                        </div>
                 </div>
                 <div class="card">
-                    <div class="card-yellow fondo"><img class="card-img-top" src="img/adult.png" width="110px" height="150px"></div>
+                    <div class="card-yellow card-top"><img class="card-img-top" src="img/adult.png" width="110px" height="150px"></div>
                         <div class="card-body">
                             <h3>Just now</h3>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor ligula vel felis cursus egestas. 
                                 Etiam consectetur finibus facilisis. Proin accumsan auctor purus, quis finibus tellus accumsan id.</p>
                         </div>
                 </div>
-                <div class="card"><div class="card-orange fondo"><img class="card-img-top" src="img/old.png" width="155px" height="150px"></div>
-                <div class="card-body">
-                    <h3>Old fart</h3>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor ligula vel felis cursus egestas. 
-                        Etiam consectetur finibus facilisis. Proin accumsan auctor purus, quis finibus tellus accumsan id.</p>
-                </div></div>
-            </div>
-            <div class="orange-div">
-                <div><h1><span class="white">About us</span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac ultricies massa. Donec id malesuada magna. 
-                        Pellentesque aliquet libero erat, fermentum commodo sapien congue ac. Integer a elit lorem. Vestibulum id venenatis diam, 
-                        et eleifend augue. Curabitur ex tortor, auctor lobortis augue at, euismod bibendum neque. Aenean ullamcorper nibh 
-                        vitae orci laoreet, eu dictum nisi ultrices. Sed condimentum nibh neque, at ultricies augue facilisis non.</p>  
-                    <br>
-                    <p>Pellentesque a tellus mauris. Nam sodales pretium rutrum. Aenean imperdiet, leo nec consectetur blandit, 
-                        risus erat commodo tortor, sit amet dignissim orci lorem vel felis. Ut tempus dignissim.</p>
+                <div class="card"><div class="card-orange card-top"><img class="card-img-top" src="img/old.png" width="155px" height="150px"></div>
+                    <div class="card-body">
+                        <h3>Old fart</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor ligula vel felis cursus egestas. 
+                            Etiam consectetur finibus facilisis. Proin accumsan auctor purus, quis finibus tellus accumsan id.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="box-div">
+            </section>
+
+            <section class="main-orange">
+                <div class="main-orange-content">
+                <h1><span class="white">About us</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac ultricies massa. Donec id malesuada magna. 
+                    Pellentesque aliquet libero erat, fermentum commodo sapien congue ac. Integer a elit lorem. Vestibulum id venenatis diam, 
+                    et eleifend augue. Curabitur ex tortor, auctor lobortis augue at, euismod bibendum neque. Aenean ullamcorper nibh 
+                    vitae orci laoreet, eu dictum nisi ultrices. Sed condimentum nibh neque, at ultricies augue facilisis non. <br>
+                    <br>Pellentesque a tellus mauris. Nam sodales pretium rutrum. Aenean imperdiet, leo nec consectetur blandit, 
+                    risus erat commodo tortor, sit amet dignissim orci lorem vel felis. Ut tempus dignissim.</p>    
+                </div>
+            </section>
+
+            <section class="main-box">
                 <div class="box box-blue">
                     <h1>How<br>It works?</h1>
                 </div>
-                
+            
                 <div class="box box-white">
                     <p class="number">01</p>
                     <h4>Answer a few questions about yourself</h4>
@@ -123,15 +126,16 @@
                     <p class="number">05</p>
                     <h4>Done!</h4>  
                 </div>
-            </div>
-        </section>
+            </section>
+        </section>    
     </main>
+
     <footer>
         <section class="footer-container">
             <div class="swipe-up"><a href="#"><img src="img/swipe.png" alt="swipe up button" width="45" height="45" ></a>
-                <h4>Take me up again!</h4></a></div>
+            <h4><a href="#">Take me up again!</h4></a></div>
         </section>
-    </footer>
-    
+    </footer>  
+     
 </body>
 </html>
