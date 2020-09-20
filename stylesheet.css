@@ -1,4 +1,3 @@
-
 /* --- mobilversion mediaquery --- */
 
  @media only screen and (max-width: 600px) {
@@ -11,17 +10,17 @@
         grid-template-columns: 1fr;
     }
 
-    .text-right-1 {
+    .text-left {
         padding-top: 5%;
     }
 
-    nav > ul{
+    nav > ul {
         display: none;
     }
 
     main .main-container {
         width: 600px;
-        grid-template-rows: 1630px 650px 850px;
+        grid-template-rows: 1630px 650px 1000px;
         justify-content: center;
     }
 
@@ -40,7 +39,7 @@
         margin-left: 10%;
     }
 
-    .my-button-main {
+    .button-main {
         display: none;  
     }
 
@@ -66,6 +65,15 @@
 
     main .main-box {
         display: block;
+    }
+
+    main .box {
+        padding-top: 10%; 
+        padding-bottom: 15%;
+    }
+
+    main .number {
+        margin-bottom: 5%;
     }
 
     footer .footer-container {
@@ -133,8 +141,6 @@ h4 {
 
 p {
     font-family: 'Fira Sans';
-    font-style: normal;
-    font-weight: 500;
     font-size: 14px;
     line-height: 24px;
     margin: 0;
@@ -159,28 +165,27 @@ a:visited {
     grid-template-columns: repeat(2,1fr); 
 }
 
-.item-right {
+.item-left {
     background-color: #C7DDEA; 
     position: relative; 
 }
 
-.text-right-1 {
+.title-left {
     margin-left: 10%;
     margin-top: 12%;
 }
 
-.text-right-2 {
+.text-left {
     width: 260px;
     margin: 3% 0 3% 10%;
 }
 
-.my-button-top {
+.button-header {
     width: 130px;
     height: 40px;
     margin-left: 10%;
     margin-top: 3%;
     font-family: 'Fira Sans';
-    font-style: normal;
     font-weight: bold;
     font-size: 10px;
     background: #FFFFFF;
@@ -196,19 +201,18 @@ a:visited {
     bottom: -4px;  
 }
 
-.item-left{
+.item-right{
     display: grid;
-    grid-template-rows: repeat(2,1fr);
-
 }
-.item-left-top {
+
+.item-right-top {
     display: grid;
     align-content: center;
     justify-items: center;
     background: #F17949;
 }
 
-.item-left-bottom {
+.item-right-bottom {
     display: grid;
     align-content: center;
     justify-items: center;
@@ -243,7 +247,7 @@ nav ul > li {
 .main-container {
     width: 131vh;
     display: grid;
-    grid-template-rows: 550px 550px 600px;
+    grid-template-rows: 550px 600px 600px;
     position: relative;
 }
 
@@ -275,7 +279,7 @@ nav ul > li {
     margin-top: 10%;
 }
 
-.my-button-main {
+.button-main {
     width: 130px;
     height: 40px;
     margin-left: 10%;
@@ -296,8 +300,6 @@ nav ul > li {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
-    justify-content: center;
-    align-items: center;
     position:absolute;
     top: 400px;
     background-color: transparent;       
@@ -334,7 +336,6 @@ nav ul > li {
     border-radius: 5px;
     position: relative;
     display: grid;
-    justify-content: center;
     justify-items: center; 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
@@ -368,11 +369,11 @@ nav ul > li {
     padding-top: 20%;
     padding-right: 15%;
     padding-left: 15%;
-    display: block;
-    justify-content: center;
+    /* display: block; */
+    /* justify-content: center;
     justify-items: center;
     align-content: center;
-    align-items: center;   
+    align-items: center;    */
 }
 
 .main-orange-content > h1 {
@@ -384,14 +385,17 @@ nav ul > li {
 .main-box {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,300px);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.box {
+    display: grid;
+    text-align: center;
+    padding: 10%; 
 }
 
 .box-blue {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
     background-color: #C7DDEA;
 }
 
@@ -403,11 +407,7 @@ nav ul > li {
     background-color: #F17949;
 }
 
-.box {
-    display: grid;
-    text-align: center;
-    padding: 10%; 
-}
+
 
 .number {
     font-family: 'Frank Ruhl Libre';
@@ -425,12 +425,12 @@ nav ul > li {
 
 .footer-container {
     width: 131vh;
-    height: 400px;
+    /* height: 400px; */
     display: grid;
-    justify-items: center; 
+    /* justify-items: center;  */
     background-color:#777574;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 320px;
+    grid-template-rows: 80px 300px;
 }
 
 .swipe-up {
