@@ -153,18 +153,19 @@ a {
 
 a:visited {
     color: #000;
-    opacity: 0.4;
+    
 }
 
 a:link {
     color: #000;
+    opacity: 0.4;
 }
 
 /* --- header styles and element --- */
 
 .header-container {
     width: 131vh;
-    height: 75vh;
+    height: 80vh;
     display: grid; 
     grid-template-columns: repeat(2,1fr); 
 }
