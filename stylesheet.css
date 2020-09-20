@@ -1,4 +1,4 @@
-/* --- mobilversion mediaquery --- */
+/* --- mobilversion --- */
 
  @media only screen and (max-width: 600px) {
 
@@ -84,6 +84,16 @@
         display: none;
     }   
  }
+
+@media only screen and (max-width: 568px) {
+    header .family-img {
+        right: 2px;
+    }
+    
+    main .main-title > h1 {
+        font-size: 38px;
+    }
+}
    
 /* --- html tag styles --- */
 
@@ -153,12 +163,12 @@ a {
 
 a:visited {
     color: #000;
-    
+    text-decoration: none;
 }
 
 a:link {
     color: #000;
-    opacity: 0.4;
+    text-decoration: none;
 }
 
 /* --- header styles and element --- */
@@ -271,8 +281,6 @@ nav ul > li {
 }
 
 .main-title{
-    width: 314px;
-    height: 101px;
     margin-left: 10%;
     margin-top: 10%;    
 }
@@ -374,11 +382,6 @@ nav ul > li {
     padding-top: 20%;
     padding-right: 15%;
     padding-left: 15%;
-    /* display: block; */
-    /* justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center;    */
 }
 
 .main-orange-content > h1 {
@@ -412,8 +415,6 @@ nav ul > li {
     background-color: #F17949;
 }
 
-
-
 .number {
     font-family: 'Frank Ruhl Libre';
     font-weight: 900;
@@ -430,9 +431,7 @@ nav ul > li {
 
 .footer-container {
     width: 131vh;
-    /* height: 400px; */
     display: grid;
-    /* justify-items: center;  */
     background-color:#777574;
     grid-template-columns: 1fr;
     grid-template-rows: 80px 300px;
