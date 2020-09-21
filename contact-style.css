@@ -2,7 +2,7 @@
 /* --- header styles --- */
 
 .header-contact {
-    width: 131vh;
+    width: 132vh;
     padding-top: 5%;
     background-color: #C7DDEA;
     display: grid;
@@ -26,7 +26,7 @@
 /* --- navigation --- */
 
 nav > ul { 
-    width: 131vh;
+    width: 132vh;
 }
 
 ul {
@@ -49,7 +49,7 @@ ul > li {
 /* --- main contact styles--- */
 
 .main-contact {
-    width: 131vh;
+    width: 132vh;
     background-color: #A9A19E;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -113,6 +113,7 @@ ul > li {
 }
 
 .contact-map {
+    background-size: cover;
     background-image: url("img/karta.png");
     background-repeat: no-repeat;
     grid-column: 1 / span 2;
@@ -120,7 +121,7 @@ ul > li {
 }
 
 .map-box {
-    margin-left: 9%;
+    margin-left: 7%;
     margin-top: 5%;
     background-color:#FAB131;
     width: 320px;
@@ -148,7 +149,7 @@ ul > li {
 /* --- footer style contact --- */
 
 .footer-contact {
-    width: 131vh;
+    width: 132vh;
     height: 40vh;
     background-color:#777574;  
 }

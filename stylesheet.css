@@ -174,7 +174,7 @@ a:link {
 /* --- header / element styles --- */
 
 .header-container {
-    width: 131vh;
+    width: 132vh;
     height: 80vh;
     display: grid; 
     grid-template-columns: repeat(2,1fr); 
@@ -264,7 +264,7 @@ nav ul > li {
 /* --- main styles --- */
 
 .main-container {
-    width: 131vh;
+    width: 132vh;
     display: grid;
     grid-template-rows: 550px 600px 600px;
     position: relative;
@@ -419,7 +419,7 @@ nav ul > li {
 /* --- footer section styles --- */
 
 .footer-container {
-    width: 131vh;
+    width: 132vh;
     display: grid;
     background-color:#777574;
     grid-template-columns: 1fr;
