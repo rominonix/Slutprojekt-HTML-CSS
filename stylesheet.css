@@ -195,7 +195,7 @@ a:link {
     margin: 3% 0 3% 10%;
 }
 
-.button-header {
+.button {
     width: 130px;
     height: 40px;
     margin-left: 10%;
@@ -211,8 +211,8 @@ a:link {
 }
 
 .family-img {
-    width:320px;
-    height:310px;
+    width:310px;
+    height:300px;
 }
 .family {
     position: absolute;
@@ -296,20 +296,6 @@ nav ul > li {
     margin-top: 10%;
 }
 
-.button-main {
-    width: 130px;
-    height: 40px;
-    margin-left: 10%;
-    font-family: 'Fira Sans';
-    font-weight: bold;
-    font-size: 10px;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 100px;
-    border-style: none; 
-    text-transform: uppercase;   
-}
-
 /* --- main second section / card styles --- */
 
 .main-card{
@@ -328,7 +314,6 @@ nav ul > li {
 
 .card-yellow {
     background-color:#FAB131;
-
 }
 
 .card-orange {

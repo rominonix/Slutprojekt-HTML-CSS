@@ -120,12 +120,11 @@ ul > li {
 }
 
 .map-box {
-    padding: 1%;
     margin-left: 9%;
     margin-top: 5%;
     background-color:#FAB131;
     width: 320px;
-    height: 210px;
+    height: 200px;
 }
 
 .map-title {
