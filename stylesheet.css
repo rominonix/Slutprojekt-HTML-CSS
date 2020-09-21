@@ -14,8 +14,19 @@
         right: 1%;
     }
 
-    .text-left {
+    header .title-left {
+        margin-left: 5%;
+
+    } 
+    header .text-left {
+        width: 90%;
+        margin-left: 5%;
         padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    header .button {
+        margin-left: 5%;
     }
 
     nav > ul {
