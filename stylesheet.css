@@ -10,6 +10,10 @@
         grid-template-columns: 1fr;
     }
 
+    header div .family-img {
+        right: 1%;
+    }
+
     .text-left {
         padding-top: 5%;
     }
@@ -20,7 +24,7 @@
 
     main .main-container {
         width: 600px;
-        grid-template-rows: 1630px 650px 1000px;
+        grid-template-rows: 1630px 650px 950px;
         justify-content: center;
     }
 
@@ -30,9 +34,13 @@
         padding-top: 5%;
     }
 
+    main .main-title > h1 {
+        font-size: 42px;
+    }
+
     main .main-gray-left {
         display: grid;
-        grid-template-rows: 200px auto;
+        grid-template-rows: 150px auto;
     }
 
     main .paragraph {
@@ -77,25 +85,17 @@
     }
 
     footer .footer-container {
-        height: 200px;
+        display: block;
+        grid-template-rows: 1fr;
+        height: 300px;
     }
 
     footer .swipe-up {
         display: none;
     }   
  }
-
-@media only screen and (max-width: 568px) {
-    header .family-img {
-        right: 2px;
-    }
-    
-    main .main-title > h1 {
-        font-size: 38px;
-    }
-}
    
-/* --- html tag styles --- */
+/* --- html tags styles --- */
 
 body {
     margin: 0;
@@ -171,7 +171,7 @@ a:link {
     text-decoration: none;
 }
 
-/* --- header styles and element --- */
+/* --- header / element styles --- */
 
 .header-container {
     width: 131vh;
@@ -211,6 +211,10 @@ a:link {
 }
 
 .family-img {
+    width:320px;
+    height:310px;
+}
+.family {
     position: absolute;
     right: 8px; 
     bottom: -4px;  
@@ -257,7 +261,7 @@ nav ul > li {
     padding: 10px 70px 10px 70px;    
 }
 
-/* --- main style general--- */
+/* --- main styles --- */
 
 .main-container {
     width: 131vh;
@@ -306,7 +310,7 @@ nav ul > li {
     text-transform: uppercase;   
 }
 
-/* --- main second section card styles --- */
+/* --- main second section / card styles --- */
 
 .main-card{
     width: 100%;
@@ -318,16 +322,16 @@ nav ul > li {
     background-color: transparent;       
 }
 
-.card-blue{
+.card-blue {
     background-color: #C7DDEA;
 }
 
-.card-yellow{
+.card-yellow {
     background-color:#FAB131;
 
 }
 
-.card-orange{
+.card-orange {
     background-color:#F17949;
 }
 
@@ -374,7 +378,7 @@ nav ul > li {
 /* --- main third section styles --- */
 
 .main-orange {   
-    background-color: orange;
+    background-color: #FAB131;
     text-align: center;
 }
 
@@ -435,6 +439,11 @@ nav ul > li {
     background-color:#777574;
     grid-template-columns: 1fr;
     grid-template-rows: 80px 300px;
+}
+
+.swipe-img {
+    width: 45px;
+    height: 45px;
 }
 
 .swipe-up {

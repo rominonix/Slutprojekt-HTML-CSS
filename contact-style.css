@@ -1,55 +1,4 @@
-/* --- html tag styles contact sida --- */
-
-/* body {
-    margin: 0;
-    background-color:#E5E5E5;
-}
-
-header, main, nav, footer, ul {
-    display: flex;
-    justify-content: center;  
-}
-
-h1 {
-    font-family: 'Frank Ruhl Libre';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 45px;
-    line-height: 45px;
-    letter-spacing: -0.02em;
-    margin: 0%;
-}
-
-p {
-    font-family: 'Fira Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 14px;
-    margin: 0;
-    color: white;
-    opacity: 0.6;   
-}
-
-a {
-    text-decoration: none;
-}
-
-a:visited {
-    color: #000;
-    opacity: 0.4;
-}
-
-/* --- span --- */
-
-/*.white {
-    color: white;
-}
-
-.opacity {
-    opacity: 0.4;
-} */
-
+/* --- styles kontakt sida --- */
 /* --- header styles --- */
 
 .header-contact {
@@ -185,16 +134,16 @@ ul > li {
     padding-top: 4%;
 }
 
-.map-text{
-    opacity: 1;
+.map-text {
+    opacity: 0.8;
     padding-left: 8%;
     color: white;  
 }
 
 .checkpoint {
     position: absolute;
-    top: 200px;
-    right: 450px;
+    top: 48%;
+    right: 45%;
 }
 
 /* --- footer style contact --- */
